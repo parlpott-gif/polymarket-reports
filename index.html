@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polymarket 做市汇报 - 第2次</title>
+    <title>Polymarket 做市汇报 - 第3次</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -27,150 +27,115 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         h2 { color: #333; margin-top: 0; }
-        .stat { font-size: 24px; font-weight: bold; color: #667eea; }
+        .bet { background: #e8f5e9; border-left: 4px solid #4caf50; padding: 15px; }
         .warning { background: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; }
         .success { background: #d4edda; border-left: 4px solid #28a745; padding: 15px; }
-        .info { background: #e7f3ff; border-left: 4px solid #2196F3; padding: 15px; }
         table { width: 100%; border-collapse: collapse; }
         th, td { padding: 10px; text-align: left; border-bottom: 1px solid #eee; }
         th { background: #f8f9fa; }
-        .timestamp { color: #666; font-size: 14px; }
-        .highlight { background: #fff0f0; border: 2px solid #ff4444; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>🤖 Polymarket 做市汇报</h1>
-        <p>汇报次数: 第2次 | 时间: 2026-02-23</p>
+        <p>汇报次数: 第3次 | 时间: 2026-02-23</p>
+    </div>
+
+    <div class="card">
+        <h2>💰 你的投注记录</h2>
+        <div class="bet">
+            <table>
+                <tr>
+                    <th>市场</th>
+                    <th>区间</th>
+                    <th>金额</th>
+                    <th>赔率</th>
+                    <th>潜在回报</th>
+                    <th>结算日</th>
+                </tr>
+                <tr>
+                    <td>Feb 20-27</td>
+                    <td>320-339</td>
+                    <td>$5</td>
+                    <td>17.1%</td>
+                    <td>$29.27</td>
+                    <td>2026-02-27</td>
+                </tr>
+            </table>
+            <p><strong>潜在利润:</strong> $24.27 (5.85x)</p>
+        </div>
     </div>
 
     <div class="card">
         <h2>📊 本次工作摘要</h2>
-        <p>1. 深入分析了历史结算数据与当前预测的对比</p>
-        <p>2. 识别了当前市场的潜在交易机会</p>
-        <p>3. 验证了预测模型的准确性</p>
-        <p>4. 部署了 GitHub Pages 汇报页面</p>
+        <ol>
+            <li>分析了你投注的市场 (Feb 20-27)</li>
+            <li>对比历史数据验证预测合理性</li>
+            <li>识别了潜在交易机会</li>
+        </ol>
     </div>
 
     <div class="card">
-        <h2>📈 策略分析</h2>
-        <div class="info">
-            <strong>🔍 关键发现:</strong>
+        <h2>📈 投注分析</h2>
+        
+        <h3>Feb 20-27 市场分析</h3>
+        <table>
+            <tr>
+                <th>区间</th>
+                <th>当前概率</th>
+                <th>历史对比</th>
+            </tr>
+            <tr>
+                <td>320-339</td>
+                <td>17.5%</td>
+                <td>⭐ 你投注的区间</td>
+            </tr>
+            <tr>
+                <td>340-359</td>
+                <td>16.5%</td>
+                <td>接近</td>
+            </tr>
+            <tr>
+                <td>300-319</td>
+                <td>12.5%</td>
+                <td>合理</td>
+            </tr>
+        </table>
+        
+        <div class="success" style="margin-top:15px">
+            <strong>✅ 分析结论:</strong>
             <ul>
-                <li>历史月度实际推文: 868 - 1,430 条</li>
-                <li>每日实际推文: 11 - 59 条 (平均 36 条)</li>
-                <li>当前 Feb 21-23 市场预测 65-89 条 (71.5% 概率)</li>
-                <li>历史 65-89 条区间出现频率较高，符合市场预期</li>
+                <li>历史7天平均: 约 250-350 条</li>
+                <li>当前 320-339 区间概率合理 (17.5%)</li>
+                <li>你的投注符合市场预期</li>
             </ul>
         </div>
-    </div>
-
-    <div class="card highlight">
-        <h2>🎯 交易机会分析</h2>
-        
-        <h3>Feb 21-23 市场 (2天窗口)</h3>
-        <table>
-            <tr>
-                <th>区间</th>
-                <th>当前概率</th>
-                <th>历史准确性</th>
-                <th>建议</th>
-            </tr>
-            <tr>
-                <td>65-89</td>
-                <td>71.5%</td>
-                <td>⭐⭐⭐ 高</td>
-                <td>✅ 符合历史均值</td>
-            </tr>
-            <tr>
-                <td>90-114</td>
-                <td>26.5%</td>
-                <td>⭐⭐ 中</td>
-                <td>⚠️ 略高</td>
-            </tr>
-        </table>
-        
-        <h3>March 2026 市场 (整月)</h3>
-        <table>
-            <tr>
-                <th>区间</th>
-                <th>当前概率</th>
-                <th>历史月均值</th>
-                <th>建议</th>
-            </tr>
-            <tr>
-                <td>1400+</td>
-                <td>39.6%</td>
-                <td>1137条</td>
-                <td>⚠️ 市场可能过度乐观</td>
-            </tr>
-            <tr>
-                <td>1000-1200</td>
-                <td>~15%</td>
-                <td>1137条</td>
-                <td>✅ 合理区间</td>
-            </tr>
-        </table>
     </div>
 
     <div class="card">
         <h2>📌 当前活跃市场</h2>
         <table>
-            <tr>
-                <th>市场</th>
-                <th>结算日</th>
-                <th>交易量</th>
-                <th>最可能结果</th>
-            </tr>
-            <tr>
-                <td>Feb 17-24</td>
-                <td>2026-02-24</td>
-                <td>$11.0M</td>
-                <td>340-359 (38.5%)</td>
-            </tr>
-            <tr>
-                <td>Feb 21-23</td>
-                <td>2026-02-23</td>
-                <td>$2.1M</td>
-                <td>65-89 (71.5%)</td>
-            </tr>
-            <tr>
-                <td>Feb 20-27</td>
-                <td>2026-02-27</td>
-                <td>$3.3M</td>
-                <td>320-339 (16%)</td>
-            </tr>
-            <tr>
-                <td>March 2026</td>
-                <td>2026-04-01</td>
-                <td>$996K</td>
-                <td>1400+ (39.6%)</td>
-            </tr>
+            <tr><th>市场</th><th>结算日</th><th>交易量</th><th>最可能结果</th></tr>
+            <tr><td>Feb 17-24</td><td>2026-02-24</td><td>$11.3M</td><td>340-359 (40.5%)</td></tr>
+            <tr><td>Feb 21-23</td><td>2026-02-23</td><td>$2.3M</td><td>65-89 (66.5%)</td></tr>
+            <tr><td>Feb 20-27</td><td>2026-02-27</td><td>$3.4M</td><td>320-339 (17.5%)</td></tr>
+            <tr><td>March 2026</td><td>2026-04-01</td><td>$998K</td><td>1400+ (39.6%)</td></tr>
         </table>
     </div>
 
     <div class="card">
-        <h2>💰 资金状态</h2>
+        <h2>💵 资金状态</h2>
         <p>起始资金: <strong>$50.00</strong></p>
-        <p>当前余额: <strong>$50.00</strong> (未变动)</p>
-        <p>今日盈亏: <strong>$0.00</strong></p>
-    </div>
-
-    <div class="card">
-        <h2>🔜 下一步计划</h2>
-        <ol>
-            <li><strong>需要钱包私钥</strong> 才能实际交易</li>
-            <li>等待 Feb 21-23 市场结算，验证预测</li>
-            <li>寻找被低估的区间建仓</li>
-            <li>逐步建立做市策略</li>
-        </ol>
+        <p>你的投注: <strong>$5.00</strong></p>
+        <p>剩余可用: <strong>$45.00</strong></p>
+        <p>潜在总回报: <strong>$29.27</strong></p>
     </div>
 
     <div class="warning">
-        <strong>⚠️ 需要你帮助:</strong>
+        <strong>⚠️ 等待确认:</strong>
         <ul>
-            <li>提供 Polymarket 钱包私钥或助记词</li>
-            <li>确认 50 美元已充值到账</li>
+            <li>请确认你的投注是否成功成交</li>
+            <li>如需追加投注，请告知金额和区间</li>
         </ul>
     </div>
 
